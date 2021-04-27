@@ -20,6 +20,8 @@ $(function(){
     var lettere = "ABCDEFGHIJKLMNOPQRSTUVWXTZ";
     for (var i = 0; i < 3; i++) {
       code.push(lettere.charAt(Math.floor(Math.random() * lettere.length)));
+    };
+    for (var i = 0; i < 3; i++) {
       code.push(Math.floor(Math.random() * 10));
     };
     return code.join(' ');
